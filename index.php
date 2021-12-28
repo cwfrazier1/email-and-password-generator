@@ -1,4 +1,5 @@
 <?php
+
     function generate($type = 'password', $length = 14)
     {
         $time = time();
@@ -23,7 +24,6 @@
         return $randomString;
     }
 
-
     $emailAddress = generate('sensative', '20')."@cwfrazier.com";
     $password = generate('password', 20);
 ?>
@@ -38,8 +38,8 @@
 <?php
     echo "
         <table>
-            <tr><td>Email:</td><td><div id=\"email\">$emailAddress</div></td></tr>
-            <tr><td>Password:</td><td><div id=\"pass\">$password</div></td></tr>
+            <tr><td>$emailAddress</td></tr>
+            <tr><td>$password</td></tr>
         </table>
 ";
 
